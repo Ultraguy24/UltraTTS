@@ -1,4 +1,4 @@
-UltraTTS
+# UltraTTS
 
 UltraTTS is a simple, graphical front-end for the powerful Piper Text-to-Speech engine. It provides a user-friendly interface to generate speech from local, high-quality voice models.
 ## Features
@@ -9,9 +9,7 @@ UltraTTS is a simple, graphical front-end for the powerful Piper Text-to-Speech 
 
     User-Friendly Interface: A simple GUI makes it easy to select a voice and generate speech.
 
-    Robust Cleanup: Automatically cleans up its virtual audio devices on startup and graceful shutdown.
-
-🛠️ Installation
+## Installation
 Prerequisites
 
 You need the following tools installed on your system:
@@ -58,7 +56,7 @@ UltraTTS uses voice models from the Piper project. You must download a voice mod
     mv ~/Downloads/your_voice_model.onnx ~/.local/share/ultratts/voices/
     mv ~/Downloads/your_voice_model.json ~/.local/share/ultratts/voices/
 
-🚀 Usage
+## Usage
 
     Run the executable from the build directory:
 
@@ -69,7 +67,7 @@ UltraTTS uses voice models from the Piper project. You must download a voice mod
 
     Enter text into the input box, select a voice, and click "Speak" to generate audio.
 
-📄 Credits & License
+## Credits & License
 
     Ultraguy: Project creator.
 
