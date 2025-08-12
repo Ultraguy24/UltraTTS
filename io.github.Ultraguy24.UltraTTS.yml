@@ -36,4 +36,4 @@ modules:
       - type: git
         url: https://github.com/Ultraguy24/UltraTTS.git
         tag: main
-        commit: 0a62c79896ad4df114c43c8b9ab0b7dc450f3bbe
+        commit: b795822bec12892bff8478e70a046ec1505a509c
