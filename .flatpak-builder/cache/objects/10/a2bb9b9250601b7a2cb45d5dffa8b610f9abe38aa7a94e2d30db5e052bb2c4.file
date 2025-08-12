@@ -24,7 +24,7 @@
       "sources" : [
         {
           "url" : "https://github.com/Ultraguy24/UltraTTS.git",
-          "commit" : "d80369efde15c2559cf1d5f3e3f03c0e1ccc86b1",
+          "commit" : "0b5bec4380f0bb8c3b4b7a5ceaac274e96aa5f22",
           "type" : "git"
         }
       ]
@@ -43,5 +43,5 @@
     "--talk-name=org.PulseAudio1.paplay",
     "--env=QT_QPA_PLATFORMTHEME=qt6ct"
   ],
-  "source-date-epoch" : 1754973854
+  "source-date-epoch" : 1754974644
 }
