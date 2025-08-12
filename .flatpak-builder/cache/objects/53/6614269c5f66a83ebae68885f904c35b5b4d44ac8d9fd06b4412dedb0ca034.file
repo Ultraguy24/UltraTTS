@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=UltraTTS
+Comment=A graphical front-end for the Piper text-to-speech engine
+Exec=UltraTTS.x86_64
+Icon=io.github.Ultraguy24.UltraTTS
+Type=Application
+Categories=Utility;AudioVideo;

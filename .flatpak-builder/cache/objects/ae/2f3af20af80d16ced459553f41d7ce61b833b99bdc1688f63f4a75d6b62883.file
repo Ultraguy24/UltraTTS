@@ -1,0 +1,31 @@
+[Application]
+name=io.github.Ultraguy24.UltraTTS
+runtime=org.kde.Platform/x86_64/6.9
+sdk=org.kde.Sdk/x86_64/6.9
+command=UltraTTS.x86_64
+
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+devices=all;
+filesystems=xdg-data/ultratts:ro;xdg-config/kdeglobals:ro;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+org.kde.kconfig.notify=talk
+org.kde.KGlobalSettings=talk
+org.PulseAudio1.paplay=talk
+org.kde.kdeconnect=talk
+org.PulseAudio1.pactl=talk
+org.freedesktop.Piper=talk
+
+[Environment]
+QT_QPA_PLATFORMTHEME=qt6ct
+
+[Extension io.github.Ultraguy24.UltraTTS.Debug]
+directory=lib/debug
+autodelete=true
+no-autodownload=true
+
+[Build]
+built-extensions=io.github.Ultraguy24.UltraTTS.Debug;

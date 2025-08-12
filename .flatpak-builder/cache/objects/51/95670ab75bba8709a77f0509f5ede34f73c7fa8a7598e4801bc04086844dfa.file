@@ -1,0 +1,5 @@
+[Runtime]
+name=io.github.Ultraguy24.UltraTTS.Debug
+
+[ExtensionOf]
+ref=app/io.github.Ultraguy24.UltraTTS/x86_64/master
