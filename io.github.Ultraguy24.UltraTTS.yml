@@ -1,0 +1,36 @@
+app-id: io.github.Ultraguy24.UltraTTS
+runtime: org.kde.Platform
+runtime-version: '6.9'
+sdk: org.kde.Sdk
+command: UltraTTS.x86_64
+separate-locales: false
+
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --device=all
+  - --share=network
+  - --filesystem=xdg-data/ultratts:ro
+  - --talk-name=org.freedesktop.Piper
+  - --talk-name=org.PulseAudio1.pactl
+  - --talk-name=org.PulseAudio1.paplay
+  - --env=QT_QPA_PLATFORMTHEME=qt6ct
+
+build-options:
+  cxxflags: -fPIC
+  env:
+    VCPKG_ROOT: /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/
+    CMAKE_PREFIX_PATH: /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/
+
+modules:
+  - name: UltraTTS
+    builddir: true
+    buildsystem: cmake
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+    sources:
+      - type: git
+        url: https://github.com/Ultraguy24/UltraTTS.git
+        tag: main
+        commit: a30030813f85c179ce61724cda93a00d32a53683
