@@ -31,7 +31,7 @@ modules:
       - -DCMAKE_BUILD_TYPE=Release
     post-install:
       - install -Dm644 ./io.github.Ultraguy24.UltraTTS.desktop /app/share/applications/io.github.Ultraguy24.UltraTTS.desktop
-      - install -Dm644 ./io.github.Ultraguy24.UltraTTS.png /app/share/icons/hicolor/128x128/apps/io.github.Ultraguy24.UltraTTS.png
+      - install -Dm644 data/io.github.Ultraguy24.UltraTTS.png /app/share/icons/hicolor/128x128/apps/io.github.Ultraguy24.UltraTTS.png
     sources:
       - type: git
         url: https://github.com/Ultraguy24/UltraTTS.git
